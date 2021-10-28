@@ -44,7 +44,7 @@
 :root {
   --max-width: 70rem;
   --header-height: 40px;
-  --default-font: Arial, Helvetica, freesans, sans-serif;
+  --default-font: Arial, Helvetica, sans-serif;
   --default-font-size: 1em;
   --default-nav-size: 0.713em;
   --default-pad-min: 0.5em;
@@ -58,7 +58,7 @@ body {
   color: var(--text-color);
   font-family: var(--default-font);
   transition: all 0.2s ease-in-out;
-
+}
 
 h1,
 h2,
@@ -67,19 +67,19 @@ h4,
 h5,
 h6 {
   color: var(--header-color);
-
+}
 
 a:link,
 a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+}
 
-
-.app-header {
+.appzzzzzZZZZZZZZZZZZZ-header {
   background-color: var(--header-bg);
   height: var(--header-height);
-
+}
 
 .app-logo {
   width: 80px;
@@ -88,9 +88,10 @@ a:active {
   background-size: contain;
   height: var(--header-height);
   line-height: var(--header-height);
+}
 
-
-.mobile-nav, label[for='mobile-nav'] {
+.mobile-nav,
+label[for='mobile-nav'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -99,28 +100,28 @@ a:active {
   width: 40px;
   cursor: pointer;
   z-index: 10;
-
+}
 
 .mobile-nav:checked ~ .main-nav {
   transition: all 0.2s linear;
-  transform:  translateY(0px);
-
+  transform: translateY(0px);
+}
 
 .fas.fa-bars {
   position: absolute;
   top: 8px;
   right: 8px;
-  color: #FFF;
+  color: #fff;
   font-size: 1.5em;
   z-index: 1;
-
+}
 
 ol,
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
+}
 
 button {
   border: none;
@@ -136,7 +137,7 @@ button:focus {
   visibility: hidden;
 }
 
-.app-header > .container {
+.appzzzzzZZZZZZZZZZZZZ-header > .container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -240,11 +241,14 @@ button:focus {
   width: 40px;
 }
 
-.the-title {
-  font-size: 1.375rem !important;
+.title {
+  font-size: 50%;
   color: var(--header-color);
-  font-weight: 800;
+  font-weight: 600;
+  background-color: #33333370;
+  padding: 0.25em 0 0.25em 0.5em;
 }
+
 .the-date {
   font-size: 1.375rem !important;
   float: right;
@@ -332,6 +336,11 @@ button:focus {
   border-left: 2px solid var(--highlight-color-a);
   text-transform: uppercase;
   padding-left: var(--default-pad-med);
+}
+
+.description {
+  background-color: #33333370;
+  padding: 0.25em 0 0.25em 0.5em;
 }
 
 .hero-banner .item .description {
@@ -453,7 +462,7 @@ button:focus {
   padding: 1em;
 }
 
-.BOOOOMBOOOOMBOOOOMTHISDOESNOTLOOOKRIGHTDOESIT? {
+.grid-it {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: masonry;
@@ -474,12 +483,14 @@ button:focus {
   background-size: cover;
 }
 
-@moooooodia screen and (min-width: 768px) {
-  .app-header > .container {
+@media screen and (min-width: 768px) {
+  .appzzzzzZZZZZZZZZZZZZ-header > .container {
     flex-direction: row;
   }
 
-  .fas, label[for='mobile-nav'], .mobile-nav {
+  .fas,
+  label[for='mobile-nav'],
+  .mobile-nav {
     display: none;
   }
 
